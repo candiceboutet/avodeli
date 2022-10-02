@@ -101,7 +101,7 @@ width: 50%;
 }
 h2{
  font-weight: bold;
- font-size: 35px;
+ font-size: 45px;
  position: relative;
  padding-top: 20px;
 }
@@ -120,4 +120,25 @@ h2::before {
 #sign {
     width: 150px;
 }
+#plants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+#plants-photos-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.plant-box{
+    border: 1px solid red;
+    width: 300px;
+    height: 550px;
+}
+#plant-1{
+    background-image: url(./images/);
+}
+
 
