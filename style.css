@@ -1,0 +1,123 @@
+body{
+    background-color: #f8F9FA;
+    position: relative;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+#nav{
+   width: 90%;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    position: absolute;
+    z-index: 2;	
+    margin-left: 70px;
+    margin-top: 15px;
+   
+}
+nav{
+width: 500px;
+display: flex;
+justify-content: space-between;
+
+}
+nav a {
+    text-decoration: none;
+color: rgb(185, 80, 68);
+font-weight: bold;
+font-size: larger;
+}
+#avo {
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    
+}
+#hero-container{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+#background{
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(./images/hd-wallpaper-g70b073005_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  opacity: 0.75;
+  background-position: center;  
+}
+#hero-text{
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+   
+    position: relative;
+}
+h1{
+    font-family: 'Righteous', cursive; 
+    font-size: 100px;
+    
+}
+button {
+    text-decoration: none;
+   background: none;
+    color: white;
+    border: 2px solid white;
+    
+    font-size: 1rem;
+    padding: 10px;
+    text-transform: uppercase;
+}
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+#cafe-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+	align-items: flex-start;
+}
+#caf-container-right img {
+    width: 500px;
+    margin-right: 15px;
+}
+#caf-container-left {
+  
+    display: flex;
+	flex-direction: column;
+width: 50%;
+	justify-content: flex-start;
+	align-items: center;
+}
+h2{
+ font-weight: bold;
+ font-size: 35px;
+ position: relative;
+ padding-top: 20px;
+}
+h2::before {
+    width: 80px;
+    height: 2px;
+    background: #ff7404;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#sign {
+    width: 150px;
+}
+
