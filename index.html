@@ -7,6 +7,7 @@
     <title>AVO DELI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b4a96e03aa.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Righteous&display=swap" rel="stylesheet">
 
@@ -16,7 +17,7 @@
     <div id="nav">
       <div id="avo">AVO</div>
     <nav>
-      <a href="">Home</a>
+      <a href="#" id="home-btn">Home</a>
       <a href="">Recipes</a>
       <a href="">Services</a>
       <a href="">About</a>
@@ -46,10 +47,10 @@
     <img src="./images/restaurant-2651423_1920.jpg" alt="terrase avo deli">
   </div>
   <div id="caf-container-left">
-    <h2 id="caf-title"> The café </h2>
+    <div id="caf-title"> The café </div>
     <p id="caf-text"> Lorem ipsum dolor sit amet consectetur 
       adipisicing elit. Provident cumque iusto eos qui facere 
-      consectetur voluptatem esse? Sunt voluptatum, impedit 
+      consectetur voluptatem esse? Sunt voluptatum, impedit <br><br>
       quisquam distinctio, hic natus asperiores porro 
       ipsum accusamus ea enim obcaecati? Explicabo</p>
  
@@ -70,9 +71,83 @@
   </section>
   <section id="menu">
     <h2>Special Menu</h2>
-    
+    <div class="cards-container">
+      <div class="card" id="card-1"></div>
+      <div class="card" id="card-2"></div>
+      <div class="card" id="card-3"></div>
+      <div class="card" id="card-4"></div>
+      <div class="card" id="card-5"></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div id="testi-container">
+      <div class="testi" id="testi-1"></div>
+      <div class="testi" id="testi-2"></div>
+      <div class="testi" id="testi-2"></div>
+    </div>
   </section>
   </main>
+
+  <section id="booking">
+    <h2>Book a table</h2>
+
+  </section>
+
+ <section id="contact-section">
+    <div id="contact-container">
+      <div class="contact-item" id="about-us">
+        <h3>About us</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Quos quisquam quis alias voluptatibus 
+          voluptas earum totam explicabo nihil.</p>
+        <div id="socials">
+          <div class="icons" id="twitter"><i class="fa-brands fa-twitter"></i></div>
+          <div class="icons" id="facebook"><i class="fa-brands fa-facebook"></i></div>
+          <div class="icons" id="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="icons" id="insta"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+
+      <div class="contact-item" id="infos">
+        <div id="hours">
+          <h3>Opening Hours</h3>
+          <div class="box-contact">
+            <p class="info-black">Monday-Saturday</p>
+            <p>7AM-4PM</p></div>
+        </div>
+        <div id="contact">
+          <h3>Contact Info</h3>
+          <div class="box-contact">
+          <p class="info-black">Address:</p>
+          <p>24 Street Name, Biarritz, France</p>
+        </div>
+        <div class="box-contact">
+          <p class="info-black">Phone</p>
+          <p>+33 98 98 98 98</p>
+        </div>
+        <div class="box-contact">
+          <p class="info-black">Email</p>
+          <p>eugenie.lallemand@avo.com</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="contact-item" id="links">
+      <h3>Quick Links</h3>
+      <a href="">About</a>
+      <a href="">Terms of Use</a>
+      <a href="">Disclaimers</a>
+      <a href="">Contact</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright ©2022 All rights reserved | This website is made with <i class="fa-regular fa-heart"></i> by <span> Candice Boutet</span></p>
+  </footer>
+
+  
   <script src="index.js"></script>  
 </body>
 </html>
