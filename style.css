@@ -1,71 +1,66 @@
+
+
 body{
+    margin: 0;
+    
+    min-height: 100vh;
     background-color: #f8F9FA;
-    position: relative;
-    overflow-x: hidden;
-    margin-left: 0;
-    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
 }
-p{
-    color: gray;
-    line-height: 1.5em;
+#carrousel{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black; 
+    position: relative;
+    overflow: hidden;
 }
-#nav{
-   width: 90%;
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-    position: absolute;
-    z-index: 2;	
-    margin-left: 70px;
-    margin-top: 3em;
-   
-}
-nav{
-width: 500px;
-display: flex;
-justify-content: space-between;
+#container{
+    width: 100vw;
+    height: 100vh;
 
 }
-nav a {
-    text-decoration: none;
-color: black;
-font-weight: bold;
-font-size: larger;
-}
-#home-btn{
-    color: #ff7404;
-}
-#avo {
-    font-family: 'Righteous', cursive;
-    font-size: 35px;
+#nav{
+    width: 90%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: absolute;
+     z-index: 2;	
+     margin-left: 70px;
+    top: 3em;
     
-}
-#hero-container{
+ }
+nav{
+    width: 500px;
     display: flex;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
-    width: 100vw;
-    height: 100vh;
-}
-#background{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(./images/hd-wallpaper-g70b073005_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  opacity: 0.75;
-  background-position: center;  
-}
+    justify-content: space-between;
+ 
+ }
+ nav a {
+        text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+ }
+ #home-btn{
+     color: #ff7404;
+ }
+ #avo {
+     font-family: 'Righteous', cursive;
+     font-size: 35px;
+     
+ }
 #hero-text{
     display: flex;
     flex-direction: column;
 	justify-content: center;
 	align-items: center;
-   
-    position: relative;
+    position: absolute;
+
+    top: 50%;
+    right: 50%;
+    transform: translate3d(50%, -50%, 0);
+    
 }
 h1{
     font-family: 'Righteous', cursive; 
@@ -80,6 +75,49 @@ button {
     font-size: 1rem;
     padding: 10px;
     text-transform: uppercase;
+}
+.photo {
+    width: 100vw;
+    height: 100vh;  
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    opacity: 0.7;
+}
+#left{
+    position:absolute;
+    font-size: 4em;
+    text-shadow: -1px 2px 5px rgba(0,0,0,0.7);
+    top: 50%;
+    left: 1%;
+    cursor: pointer;
+    transition: 300ms;
+    opacity: 0.8;
+
+}
+#left:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#right{
+    position:absolute;
+    font-size: 4em;
+    text-shadow: -1px 2px 5px rgba(0,0,0,0.7);
+    top: 50%;
+    
+    right: 1%;
+    cursor: pointer;
+    transition: 300ms;
+    opacity: 0.8;
+}
+#right:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+p{
+    color: gray;
+    line-height: 1.5em;
 }
 section {
     height: 80vh;
@@ -104,7 +142,11 @@ section {
 	flex-direction: column;
     width: 50%;
 	justify-content: flex-start;
-	
+    margin-left: 1em;;
+}
+
+#caf-container-right{
+    margin-right: 1em;
 }
 #caf-title{
     font-weight: bold;
@@ -168,6 +210,8 @@ h2::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 #plant-1{
