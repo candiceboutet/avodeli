@@ -1,17 +1,9 @@
 const nbr = 2;
 let pst = 0;
 const container = document.getElementById("container");
-const left = document.getElementById("left");
-const right = document.getElementById("right");
-
 let position = 0;
 const testimContainer = document.getElementById("testim-container");
-const testim1 = document.getElementById("testim-1");
-const testim2 = document.getElementById("testim-2");
-const testim3 = document.getElementById("testim-3");
-const dot1 = document.getElementById("dot-1");
-const dot2 = document.getElementById("dot-2");
-const dot3 = document.getElementById("dot-3");
+
 
 document.body.onload = function() {
     container.style.width = (100*nbr)+"vw";
@@ -31,8 +23,8 @@ setInterval(
             pst--;
             container.style.transform = "translate(" + pst*100 + "vw)";
             container.style.transition = "all 0.5s ease"
-            showHide();} else {
-
+            showHide();
+        } else {
              (pst<0)
              pst++;
     container.style.transform = "translate(" + pst*100 + "vw)";

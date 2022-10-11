@@ -253,10 +253,10 @@ h3 {
     transition: all 0.5s ease-out;
 }
 
-#testim-2{
+#testim2{
     opacity: 0%;
 }
-#testim-3{
+#testim3{
     opacity: 0%;
 }
 
@@ -276,13 +276,13 @@ h3 {
     background-size: cover;
     border-radius: 20px;
 }
-#testim-1 .testim-photo{
+#testim1 .testim-photo{
     background-image: url(./images/mark.jpeg);
 }
-#testim-2 .testim-photo{
+#testim2 .testim-photo{
     background-image: url(./images/oscar.jpeg);
 }
-#testim-3 .testim-photo{
+#testim3 .testim-photo{
     background-image: url(./images/jane.jpeg);
 }
 
@@ -321,7 +321,7 @@ h3 {
     transition: 1s;
     cursor: pointer;
 }
-#dot-1{
+#dot1{
     background-color: orange;
 }
 
