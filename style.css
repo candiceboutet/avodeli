@@ -189,6 +189,8 @@ h2::before {
 #sign {
     width: 150px;
 }
+
+/* Plants */
 #plants{
     margin-top: 150px;
     display: flex;
@@ -226,6 +228,105 @@ h2::before {
 h3 {
     font-family: 'Righteous', cursive; 
 }
+
+/* Testimonials */
+#testimonials{
+    flex-direction: column;
+}
+#carrousel-2{
+    margin: 0 auto;
+    width: 40vw;
+    height: 30vh;
+}
+#testim-container{
+    height: 20vh;
+    position: relative;
+    width: 160vw;
+    display: flex;
+    transition: all 1s ease-out;
+}
+.testim{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 40vw;
+    height: 30vh;
+    transition: all 0.5s ease-out;
+}
+
+#testim-2{
+    opacity: 0%;
+}
+#testim-3{
+    opacity: 0%;
+}
+
+.testim-text {
+    color: black;
+    font-size: 1.3em;
+}
+.testim-user{
+    display: flex;
+    align-items: center;
+   height: 3em;
+   margin-top: 1em;
+}
+.testim-photo{
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+    border-radius: 20px;
+}
+#testim-1 .testim-photo{
+    background-image: url(./images/mark.jpeg);
+}
+#testim-2 .testim-photo{
+    background-image: url(./images/oscar.jpeg);
+}
+#testim-3 .testim-photo{
+    background-image: url(./images/jane.jpeg);
+}
+
+.testim-infos{
+    margin-left: 1em;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    height: 100%;
+    font-size: smaller;
+}
+.testim-name{
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.testim-job{
+    margin: 0;
+    padding: 0;
+}
+#dots-container{
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+    width: 2.5%;
+    
+}
+.dots{
+    width: 0.5em;
+    height: 0.5em;
+    background-color: grey;
+    transition: 1s;
+    cursor: pointer;
+}
+#dot-1{
+    background-color: orange;
+}
+
+
+/* Contacts */
 #contact-container{
     display: flex;
     justify-content: space-between;
