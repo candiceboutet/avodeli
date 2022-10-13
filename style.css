@@ -1,5 +1,7 @@
 
-
+*{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     
@@ -10,7 +12,6 @@ body{
 #carrousel{
     width: 100vw;
     height: 100vh;
-    border: 1px solid black; 
     position: relative;
     overflow: hidden;
 }
@@ -133,9 +134,12 @@ section {
 	align-items: flex-start;
 }
 
-#caf-container-right img {
+#cafPic {
     width: 500px;
     margin-right: 15px;
+    transition: 1s ease-in;
+    transform: translateX(-500px);
+    opacity: 0;
 }
 #caf-container-left {
     display: flex;
@@ -216,14 +220,23 @@ h2::before {
     margin-left: 0.5em;
 }
 
-#plant-1{
+#plant1{
     background-image: url(./images/plante1.jpg);
+    transition: 1s ease-in;
+    transform: translateX(-500px);
+    opacity: 0;
 }
-#plant-2{
+#plant2{
     background-image: url(./images/plante2.jpg);
+    transform: translateY(-500px);
+    transition: 1s ease-in;
+    opacity: 0;
 }
-#plant-3{
+#plant3{
     background-image: url(./images/plante3.jpg);
+    transform: translateX(500px);
+    transition: 1s ease-in;
+    opacity: 0;
 }
 h3 {
     font-family: 'Righteous', cursive; 

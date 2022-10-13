@@ -1,3 +1,5 @@
+
+
 const nbr = 2;
 let pst = 0;
 const container = document.getElementById("container");
@@ -57,6 +59,23 @@ function showHide() {
     else
         left.style.visibility="visible";
 }
+// -------------- Photos
+window.addEventListener("scroll", () => {
+    let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+console.log(scrollValue);
+    if (scrollValue > 0.41){
+        plant1.style.opacity = 1;
+        plant1.style.transform = "none";
+        plant2.style.opacity = 1;
+        plant2.style.transform = "none";
+        plant3.style.opacity = 1;
+        plant3.style.transform = "none"; 
+    } else if (scrollValue > 0.25) {
+       cafPic.style.opacity = 1;
+       cafPic.style.transform = "none";
+ } });
+
+// ---------------- Carrousel 2
 
 function slide () {
     testimContainer.style.transform = "translate(" + position*40 + "vw)";
