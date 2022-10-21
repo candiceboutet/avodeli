@@ -6,8 +6,15 @@ const container = document.getElementById("container");
 let position = 0;
 const testimContainer = document.getElementById("testim-container");
 
+setTimeout(() => {
+   
+startBtn.style.left = "40%";  
+startBtn.style.opacity= "1";
+}, 500);
+
 
 document.body.onload = function() {
+ 
     container.style.width = (100*nbr)+"vw";
 
     for(i=1; i<=nbr;i++){
@@ -59,10 +66,19 @@ function showHide() {
     else
         left.style.visibility="visible";
 }
+// ------------------------- Menu 
+services.addEventListener('click' , () => {
+    if (bulle.style.opacity  === "1") {
+        bulle.style.opacity = "0";
+      } else {
+        bulle.style.opacity = "1";
+      }
+    
+})
 // -------------- Photos
 window.addEventListener("scroll", () => {
     let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-console.log(scrollValue);
+
     if (scrollValue > 0.41){
         plant1.style.opacity = 1;
         plant1.style.transform = "none";

@@ -4,41 +4,45 @@
 }
 body{
     margin: 0;
-    
     min-height: 100vh;
     background-color: #f8F9FA;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+  
 }
 #carrousel{
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 #container{
     width: 100vw;
     height: 100vh;
-
+    z-index: -1;
 }
 #nav{
     width: 90%;
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     
      position: absolute;
-     z-index: 2;	
+     z-index: 5;	
      margin-left: 70px;
     top: 3em;
-    
+    height: 500px;
  }
 nav{
     width: 500px;
+    
     display: flex;
     justify-content: space-between;
- 
+overflow: visible;
+  
  }
  nav a {
-        text-decoration: none;
+    text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: larger;
@@ -48,9 +52,55 @@ nav{
  }
  #avo {
      font-family: 'Righteous', cursive;
-     font-size: 35px;
-     
+     font-size: 35px;  
  }
+ #services {
+    cursor: pointer;
+ overflow: visible;
+ }
+
+#bulle {
+    opacity: 0;
+   overflow: visible;
+    transition: 0.5s ease-in;
+    background-color: rgba(245, 245, 245, 0.572);
+    
+    display: flex;
+   position: absolute;
+   top: 10%;
+   z-index: 15;
+    border-radius: 5px;
+    width: 12em;
+    /* height: 6em; */
+    /* clip-path: polygon(10% 0, 20% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%); */
+}
+#triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: rgba(245, 245, 245, 0.572);
+    width: 1.5em;
+    height: 1em;
+    position: absolute;
+    top: -14%;
+    left: 8%;
+    z-index: 15;
+}
+ul {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-weight: 500;
+}
+li{
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 100%;
+    padding-left: 0;
+    cursor: pointer;
+}
+li:hover{
+    background-color: #ff7404;
+}
 #hero-text{
     display: flex;
     flex-direction: column;
@@ -68,7 +118,7 @@ h1{
     font-size: 100px;
     
 }
-button {
+#startBtn {
     text-decoration: none;
    background: none;
     color: white;
@@ -76,6 +126,11 @@ button {
     font-size: 1rem;
     padding: 10px;
     text-transform: uppercase;
+    opacity: 0;
+    position: absolute;
+    left:82%;
+    bottom: 0%;
+    transition: 0.5s ease-in;
 }
 .photo {
     width: 100vw;
@@ -121,7 +176,6 @@ p{
     line-height: 1.5em;
 }
 section {
-    height: 80vh;
     display: flex;
     justify-content: center;
 	align-items: center;
@@ -201,6 +255,8 @@ h2::before {
     flex-direction: column;
     justify-content: center;
 	align-items: center;
+    height: 100vh;
+    
 }
 
 #plants-photos-container{
@@ -208,6 +264,8 @@ h2::before {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    overflow-y: hidden;
+   
 }
 .plant-box{
     
@@ -242,17 +300,103 @@ h3 {
     font-family: 'Righteous', cursive; 
 }
 
+/* Menu */
+#menu-section {
+    width: 100vw;
+	margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+#menu {
+    height: 100vh;
+    flex-direction: column;
+}
+.wrapper {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+}
+.dishes {
+    width: 150%;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dish{
+    background-color: rgba(0, 0, 0, 0.197);
+    border-radius: 20px;
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+	user-select: none;
+    border-radius: 2%;
+	color: white;
+	width: 50%;
+	height: 600px;
+    
+	font-size: 33px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+
+#avocado{
+    
+    background-size: cover;
+    background-image: url(./images/smashed-avocado-on-toast-4488463_1920.jpg);
+    background-position: center;
+}
+
+#bene{
+    background-image: url(./images/pexels-roman-odintsov-4869424.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#waffle{
+    background-image: url(./images/pexels-julia-avamotive-2065702.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#toast{
+    background-image: url(./images/pexels-daniela-constantini-5591730.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#club{
+    background-image: url(./images/pexels-brigitte-tohm-350343.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* Testimonials */
 #testimonials{
     flex-direction: column;
+    height: 100vh;
 }
 #carrousel-2{
     margin: 0 auto;
     width: 40vw;
-    height: 30vh;
+    height: 40vh;
 }
 #testim-container{
-    height: 20vh;
+    height: 100%;
     position: relative;
     width: 160vw;
     display: flex;
@@ -372,7 +516,8 @@ margin-top: 3em;
 
 footer{
     text-align: center;
-    margin-bottom: 4em;
+   margin-top: 6em;
+    margin-bottom: 2em;
 }
 footer span{
     color: #ff7404;
