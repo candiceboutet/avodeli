@@ -256,6 +256,7 @@ h2::before {
     justify-content: center;
 	align-items: center;
     height: 100vh;
+    margin-bottom: 150px;
     
 }
 
@@ -301,18 +302,22 @@ h3 {
 }
 
 /* Menu */
+
+#menu {
+    flex-direction: column;
+}
+#menu-title{
+    line-height: 130px;
+}
 #menu-section {
     width: 100vw;
 	margin: 0 auto;
-    height: 100%;
+    height: 600px;
     position: relative;
 }
-#menu {
-    height: 100vh;
-    flex-direction: column;
-}
+
 .wrapper {
-    width: 100%;
+    width: 200%;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -321,7 +326,7 @@ h3 {
 
 }
 .dishes {
-    width: 150%;
+    width: 100%;
     display: flex;
     gap: 10px;
     pointer-events: none;
@@ -333,11 +338,13 @@ h3 {
     background-color: rgba(0, 0, 0, 0.197);
     border-radius: 20px;
     display: flex;
-    padding-left: 1em;
-    padding-right: 1em;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding : 1em;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;  
+
 }
 .item {
 	display: flex;
@@ -345,14 +352,14 @@ h3 {
     align-items: center;
     margin-left: 2em;
 	user-select: none;
-    border-radius: 2%;
+    border-radius: 5%;
 	color: white;
-	width: 50%;
-	height: 600px;
+	width: 300PX;
+	height: 550px;
     
 	font-size: 33px;
 	font-weight: bold;
-	line-height: 50px;
+
 }
 
 
@@ -480,6 +487,28 @@ h3 {
 }
 #dot1{
     background-color: orange;
+}
+#booking{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    margin-top: 3em;
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.text-input{
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.413);
 }
 
 

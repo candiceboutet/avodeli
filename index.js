@@ -91,6 +91,52 @@ window.addEventListener("scroll", () => {
        cafPic.style.transform = "none";
  } });
 
+//  --------------------Draggable Slider
+const sliderMenu = {
+
+    sliderContainer : document.getElementById("menu-section"),
+    innerSlider : document.querySelector(".wrapper"),
+    pressed : false,
+    startX : null,
+    x : null,
+    
+    
+    init : function() {
+    
+    sliderMenu.sliderContainer.addEventListener("mousedown", (e) => {
+        pressed = true;
+        startX = e.offsetX - sliderMenu.innerSlider.offsetLeft;
+        sliderMenu.sliderContainer.style.cursor = "grabbing";
+        sliderMenu.sliderContainer.addEventListener("mousemove", (e) => {
+            if (!pressed) return;
+            e.preventDefault();
+        
+            x = e.offsetX;
+        
+            sliderMenu.innerSlider.style.left = `${x - startX}px`;
+        });
+    });
+    
+    sliderMenu.sliderContainer.addEventListener("mouseenter", () => {
+        sliderMenu.sliderContainer.style.cursor = "grab";
+    });
+    
+    sliderMenu.sliderContainer.addEventListener("mouseleave", () => {
+        sliderMenu.sliderContainer.style.cursor = "default";
+    });
+    
+    sliderMenu.sliderContainer.addEventListener("mouseup", () => {
+        sliderMenu.sliderContainer.style.cursor = "grab";
+        pressed = false;
+    });
+    
+    window.addEventListener("mouseup", () => {
+        pressed = false;
+    });
+    }
+    }
+    
+    sliderMenu.init();
 // ---------------- Carrousel 2
 
 function slide () {
