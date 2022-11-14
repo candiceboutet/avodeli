@@ -20,7 +20,7 @@ document.body.onload = function() {
     for(i=1; i<=nbr;i++){
         div = document.createElement("div");
         div.className = "photo";
-        div.style.backgroundImage = "url('../images/im" + i + ".jpg')";
+        div.style.backgroundImage = "url(../images/im" + i + ".jpg)";
         container.appendChild(div);
     }
 
